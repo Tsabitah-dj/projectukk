@@ -1,0 +1,84 @@
+
+.navbar {
+    background-color: #0d6efd !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* ikon jadi putih */
+}
+
+
+.offcanvas {
+    background-color: #0d6efd !important;
+    color: #fff;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.offcanvas-title {
+    color: #fff;
+}
+
+.btn-close {
+    filter: brightness(0) invert(1); /* tombol X putih */
+}
+
+/* ---------- NAV LINKS ---------- */
+.nav-link {
+    color: #e9f2ff !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: #dbe9ff !important;
+}
+
+
+.dropdown-menu {
+    background-color: #0b5ed7;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #0a58ca;
+    color: #fff;
+}
+
+
+.offcanvas-body .form-control {
+    background-color: #0b5ed7;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.offcanvas-body .form-control::placeholder {
+    color: #e6e6e6;
+}
+
+.btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffffff;
+    color: #0d6efd;
+}
