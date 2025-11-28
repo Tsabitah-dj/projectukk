@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('ahliwaris', function (Blueprint $table) {
             $table->id();
             $table->string('nama_pemohon');
+            $table->string('nama_alm');
             $table->date('tanggal');             
             $table->string('no_register')->unique();
             $table->text('alamat');

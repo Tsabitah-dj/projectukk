@@ -32,7 +32,8 @@
         <thead class="table-primary">
           <tr>
             <th>No</th>
-            <th>Nama Pemohon</th>
+            <th>Nama Ahli Waris</th>
+            <th>Nama Pewaris</th>
             <th>Tanggal</th>
             <th>No Register</th>
             <th>Alamat</th>
@@ -44,6 +45,7 @@
             <tr>
               <td>{{ $i + 1 }}</td>
               <td>{{ $item->nama_pemohon }}</td>
+              <td>{{ $item->nama_alm }}</td>
               <td>{{ $item->tanggal }}</td>
               <td>{{ $item->no_register }}</td>
               <td>{{ $item->alamat }}</td>

@@ -7,7 +7,7 @@ use App\Models\AhliWaris;
 
 class PerBulanController extends Controller
 {
-    public function index(Request $request) // <-- inject Request di sini
+    public function index(Request $request) 
     {
         $bulan = $request->input('bulan'); // format: YYYY-MM
 

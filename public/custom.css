@@ -1,6 +1,10 @@
 
 .navbar {
-    background-color: #0d6efd !important;
+    background: linear-gradient(90deg,
+        #AAC4F5,
+        #8CA9FF,
+        #93BFC7
+    );
 }
 
 .navbar-brand {
@@ -18,8 +22,25 @@
 
 
 .offcanvas {
-    background-color: #0d6efd !important;
+     background: linear-gradient(90deg,
+        #AAC4F5,
+        #8CA9FF,
+        #93BFC7
+    );
     color: #fff;
+    transform: translateX(100%); /* Mulai dari kanan */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.offcanvas.show {
+    transform: translateX(0);  /* Slide masuk */
+    opacity: 1;                 /* Fade in */
+}
+
+.offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.4); /* lebih gelap / blur */
+    backdrop-filter: blur(3px);
 }
 
 .offcanvas-header {
@@ -27,7 +48,7 @@
 }
 
 .offcanvas-title {
-    color: #fff;
+    color: #141313ff;
 }
 
 .btn-close {
@@ -36,7 +57,7 @@
 
 /* ---------- NAV LINKS ---------- */
 .nav-link {
-    color: #e9f2ff !important;
+    color: #141414 !important;
 }
 
 .nav-link:hover {
@@ -50,21 +71,21 @@
 
 
 .dropdown-menu {
-    background-color: #0b5ed7;
+    background: linear-gradient(90deg, #B4DEBD, #91C4C3);
 }
 
 .dropdown-item {
-    color: #fff;
+    color: #1a1818;
 }
 
 .dropdown-item:hover {
-    background-color: #0a58ca;
+    background-color: #0aca9a;
     color: #fff;
 }
 
 
 .offcanvas-body .form-control {
-    background-color: #0b5ed7;
+    background-color: #91C4C3;
     border: 1px solid #fff;
     color: #fff;
 }
@@ -81,4 +102,29 @@
 .btn-outline-success:hover {
     background-color: #ffffff;
     color: #0d6efd;
+}
+
+.soft-card {
+        border: 0;
+        border-radius: 18px;
+        padding: 20px;
+        color: #333;
+        background: linear-gradient(90deg, #F5C857, #FFEE91);
+        transition: 0.3s;
+}
+.soft-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.soft-icon {
+        width: 50px;
+        height: 50px;
+        background: #eaeefe;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.soft-icon img {
+        width: 32px;
 }

@@ -8,5 +8,5 @@ class ahliwaris extends Model
 {
     //
     protected $table="ahliwaris";
-    protected $fillable=['nama_pemohon','tanggal','no_register','alamat','bukti_register'];
+    protected $fillable=['nama_pemohon','tanggal','no_register','alamat','bukti_register','nama_alm'];
 }
