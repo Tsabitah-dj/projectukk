@@ -1,7 +1,7 @@
 # Project Ukk Pendataan ahli waris 
 
 ## Konsep Web 
-   Ini adalah web pendataan ahli waris dan registerasi ahli waris, dengan tampilan yang sederhana,dan warna yang soft, web ini digunakan untuk mengelola data, dan meregestrasi surat ahli waris secara digital.  
+   Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,dan warna yang soft, web ini digunakan untuk mengelola data. 
 
 ## Fitur yang ada 
   🔹 1. Manajemen Data Ahli Waris (user)
