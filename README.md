@@ -47,9 +47,7 @@
    🔹 4. Upload File
 
                Mendukung upload dokumen (docx, pdf, dll)
-
-               File tersimpan di storage/app/public/
-
+               
    🔹 5. Navigasi 
 
                Navbar dengan route:
@@ -90,7 +88,7 @@
       cp .env.example  
       ren .env
 
-   2. konfigurasi database
+   3. konfigurasi database
       DB_CONNECTION=mysql
       DB_HOST=127.0.0.1
       DB_PORT=3306
@@ -98,12 +96,13 @@
       DB_USERNAME=root
       DB_PASSWORD=
 
-   3. jalankan migrasi,db seed, dan key generate
+   4. jalankan migrasi,db seed, dan key generate
       php artisan migrate
       php artisan key:generate
       php artisan db:seed
+      php artisan storage:link
 
-   4. Jalankan situs web 
+   6. Jalankan situs web 
       php artisan serve
 
 ## Dibuat oleh
