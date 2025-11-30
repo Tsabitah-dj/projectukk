@@ -8,5 +8,10 @@ class dataahliwaris extends Model
 {
     //
     protected $table = 'dataahliwaris';
-    protected $fillable = ['nama_alm','nama_pewaris','hubungan_keluarga','tanggal_lahir','alamat', ];
+    protected $fillable = ['nama_pewaris','nama_ahliwaris','hubungan_keluarga','tanggal_lahir','alamat','dokumen'];
+
+    public function ahliwaris()
+    {
+        return $this->hasMany(ahliwaris::class, 'dataahliwaris_id');
+    }
 }

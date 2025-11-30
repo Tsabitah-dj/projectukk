@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>kontrol usrer</title>
+    <title>kontrol user</title>
     <link rel="stylesheet" href="custom.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </head>
@@ -35,6 +35,7 @@
                         <th>Email</th>
                         <th>Role</th>
                         <th>Dibuat Pada</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
 
@@ -54,6 +55,9 @@
                         </td>
 
                         <td>{{ $user->created_at->format('d M Y') }}</td>
+                        <td>
+                            <a href="{{ route('users.edit', $user->id) }}" class="btn btn-sm btn-warning">Edit Role</a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

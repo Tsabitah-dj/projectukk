@@ -19,7 +19,7 @@
 
       <div class="card shadow">
         <div class="card-header bg-primary text-white">
-          <h4 class="mb-0">Edit Data Ahli Waris</h4>
+          <h4 class="mb-0">Edit Registrasi Ahli Waris</h4>
         </div>
 
         <div class="card-body">
@@ -29,14 +29,16 @@
             @method('PUT')
 
             <div class="mb-3">
-              <label for="nama_pemohon" class="form-label">Nama Pewaris</label>
-              <input type="text" class="form-control" id="nama_pemohon" name="nama_pemohon" value="{{ old('nama_pemohon', $ahliwaris->nama_pemohon) }}" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="nama_alm" class="form-label">Nama Ahli Waris</label>
-              <input type="text" class="form-control" id="nama_alm" name="nama_alm" value="{{ old('nama_alm', $ahliwaris->nama_alm) }}" required>
-            </div>
+                    <label for="dataahliwaris_id" class="form-label">Pilih Data Ahli Waris</label>
+                    <select name="dataahliwaris_id" id="dataahliwaris_id" class="form-control" required>
+                        <option value="">-- Pilih Ahli Waris --</option>
+                        @foreach($dataAhliWaris as $data)
+                            <option value="{{ $data->id }}" {{ $ahliwaris->dataahliwaris_id == $data->id ? 'selected' : '' }}>
+                                {{ $data->nama_pewaris }} - {{ $data->nama_ahliwaris }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
 
             <div class="mb-3">
               <label for="tanggal" class="form-label">Tanggal</label>
@@ -51,14 +53,6 @@
             <div class="mb-3">
               <label for="alamat" class="form-label">Alamat</label>
               <textarea class="form-control" id="alamat" name="alamat" rows="3" required>{{ old('alamat', $ahliwaris->alamat) }}</textarea>
-            </div>
-
-           <div class="mb-3">
-              <label for="bukti_register" class="form-label">Bukti Register (Foto):</label>
-              <input type="file" name="bukti_register" class="form-control" accept="image/*">
-              @if($ahliwaris->bukti_register)
-                <small class="text-muted">Foto saat ini: <a href="{{ asset('uploads/' . $ahliwaris->bukti_register) }}" target="_blank">Lihat</a></small>
-              @endif
             </div>
 
             <div class="d-flex justify-content-between">

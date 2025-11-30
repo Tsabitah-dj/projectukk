@@ -78,4 +78,26 @@ class AuthController extends Controller
     $users = \App\Models\User::all();
     return view('users.index', compact('users'));
     }
+
+    // Tampilkan form edit role
+    public function edit(User $user)
+    {
+        return view('users.edit', compact('user'));
+    }
+
+    // Update role user
+    public function update(Request $request, User $user)
+    {
+        $request->validate([
+            'role' => 'required|in:admin,user', // tambahkan role lain jika ada
+        ]);
+
+        $user->update([
+            'role' => $request->role,
+        ]);
+
+        
+
+        return redirect()->route('users.index')->with('success', 'Role user berhasil diperbarui.');
+    }
 }

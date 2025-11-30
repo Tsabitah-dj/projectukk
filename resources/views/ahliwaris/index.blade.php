@@ -10,7 +10,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </head>
     <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-<h1 class="text-center mt-5">Data Registrasi</h1>
+<h1 class="text-center mt-5">Data Registrasi Surat Ahli Waris</h1>
 
   @include('Layout.navbar')
     
@@ -35,7 +35,6 @@
                         <th>Tanggal</th>
                         <th>No Register</th>
                         <th>Alamat</th>
-                        <th>Bukti Register</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -44,18 +43,11 @@
                     @forelse ($ahliwaris ?? [] as $i => $item)
                         <tr>
                             <td>{{ $i + 1 }}</td>
-                            <td>{{ $item->nama_pemohon }}</td>
-                            <td>{{ $item->nama_alm }}</td>
+                            <td>{{ $item->dataahliwaris->nama_ahliwaris ?? '-' }}</td>
+                            <td>{{ $item->dataahliwaris->nama_pewaris ?? '-' }}</td>
                             <td>{{ $item->tanggal }}</td>
                             <td>{{ $item->no_register }}</td>
                             <td>{{ $item->alamat }}</td>
-                            <td>
-                                @if($item->bukti_register)
-                                 <a href="{{ asset('storage/' . $item->bukti_register) }}" target="_blank">Lihat Foto</a>
-                                @else
-        -
-                                 @endif
-                        </td>
                             <td>
                                 <a href="{{ route('surat.edit', $item->id) }}" class="btn btn-sm btn-warning">Edit</a>
 

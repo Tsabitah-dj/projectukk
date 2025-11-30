@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('dataahliwaris', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_alm');
             $table->string('nama_pewaris');
+            $table->string('nama_ahliwaris');
             $table->string('hubungan_keluarga');
             $table->date('tanggal_lahir');
             $table->string('alamat');
+            $table->string('dokumen')->nullable();
             $table->timestamps();
         });
     }

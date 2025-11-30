@@ -36,6 +36,8 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth', 'admin'])->group(function () {
 
     Route::get('/users', [AuthController::class, 'userList'])->name('users.index');
+    Route::get('/users/{user}/edit', [AuthController::class, 'edit'])->name('users.edit');
+    Route::put('/users/{user}', [AuthController::class, 'update'])->name('users.update');
 
     // Dashboard Admin
     Route::get('/', [ahliwariscontroller::class, 'dashboard'])->name('dashboard');
