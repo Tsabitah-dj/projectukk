@@ -50,7 +50,7 @@
 
                File tersimpan di storage/app/public/
 
-   🔹 5. Navigasi Mudah
+   🔹 5. Navigasi 
 
                Navbar dengan route:
 
