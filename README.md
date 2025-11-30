@@ -1,9 +1,9 @@
-# Project Ukk Pendataan ahli waris Tsabit-DJ
+# Project Ukk Pendataan ahli waris 
 
-## Konsep Web Yang Saya buat
+## Konsep Web 
    Ini adalah web pendataan ahli waris dan registerasi ahli waris, dengan tampilan yang sederhana,dan warna yang soft, web ini digunakan untuk mengelola data, dan meregestrasi surat ahli waris secara digital.  
 
-## Fitur yang ada di Project ini
+## Fitur yang ada 
   🔹 1. Manajemen Data Ahli Waris (user)
 
      Tambah, edit, hapus, dan lihat data ahli waris
@@ -76,12 +76,12 @@
 ## UML 
    ![Diagram use case](public/images/UMLdrawio.png)
 
-## Prasyarat
+## syarat lingkungan
   -PHP 8.2.12 & Web Server (Apache, Lighttpd, atau Nginx)
   -Database (MySQL)
   -Web Browser (Chrome,Edge,dll)
 
-## instalasi
+## cara instalasi
    1. Klona repositori
       jalankan :
       git clone https://github.com/Tsabitah-dj/projectukk.git
