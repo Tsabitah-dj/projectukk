@@ -37,6 +37,7 @@ class dataahliwariscontroller extends Controller
         }
 
         dataahliwaris::create([
+            'user_id' => auth()->id(),
             'nama_ahliwaris' => $request->nama_ahliwaris,
             'nama_pewaris' => $request->nama_pewaris,
             'hubungan_keluarga' => $request->hubungan_keluarga,

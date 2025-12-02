@@ -26,6 +26,7 @@
         <thead>
           <tr>
             <th>No</th>
+            <th>User</th>
             <th>Nama Ahli Waris</th>
             <th>Nama Pewaris</th>
             <th>Hubungan Keluarga</th>
@@ -40,17 +41,28 @@
           @forelse ($dataahliwaris as $i => $item)
             <tr>
               <td>{{ $i + 1 }}</td>
+              <td>
+                <span class="badge bg-info text-dark">{{ $item->user?->name ?? '-' }}</span>
+              </td>
               <td>{{ $item->nama_ahliwaris }}</td>
               <td>{{ $item->nama_pewaris }}</td>
               <td>{{ $item->hubungan_keluarga }}</td>
               <td>{{ $item->tanggal_lahir }}</td>
               <td>{{ $item->alamat }}</td>
               <td>
-                @if($item->dokumen)
-                  <a href="{{ asset('storage/' . $item->dokumen) }}" target="_blank">Lihat</a>
-                @else
-                  -
-                @endif
+                  @if($item->dokumen)
+                   @php
+                      $color = $item->user?->role === 'admin' ? 'green' : 'blue';
+                   @endphp
+
+                   <a href="{{ asset('storage/' . $item->dokumen) }}"
+                    target="_blank"
+                    style="color: {{ $color }}; font-weight: bold;">
+                     Download
+                    </a>
+                   @else
+                     -
+                   @endif
               </td>
               <td>
                 <a href="{{ route('dataahliwaris.edit', $item->id) }}" class="btn btn-sm btn-warning">Edit</a>
@@ -64,7 +76,7 @@
             </tr>
           @empty
             <tr>
-              <td colspan="8">Data tidak tersedia.</td>
+              <td colspan="9">Data tidak tersedia.</td>
             </tr>
           @endforelse
         </tbody>

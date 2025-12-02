@@ -1,7 +1,7 @@
 # Project Ukk Pendataan ahli waris 
 
 ## Konsep Web 
-   Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,dan warna yang soft, web ini digunakan untuk mengelola data. 
+   Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,dan warna yang soft, web ini digunakan untuk pembuatan surat ahliwaris dan registrasinya. 
 
 ## Fitur yang ada 
   🔹 1. Manajemen Data Ahli Waris (user)
@@ -41,8 +41,6 @@
                Melihat daftar user
 
                Mengubah role user melalui halaman edit user
-
-               Admin dapat
 
    🔹 4. Upload File
 
