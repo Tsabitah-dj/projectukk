@@ -12,53 +12,39 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 
       Data yang disimpan:
 
-                Nama ahli waris
-
-                Nama pewaris
-
-                Hubungan keluarga
-
-                Tanggal lahir
-
-                Alamat
-
-                Dokumen  (upload file)
+                - Nama ahli waris
+                - Nama pewaris
+                - Hubungan keluarga
+                - Tanggal lahir
+                - Alamat
+                - Dokumen  (upload file)
 
 🔹 2. Registrasi Surat Ahli Waris (admin)
 
       Input data registrasi:
 
-                Nama pewaris
-
-                Nama ahliwaris
-
-                Tanggal
-
-                Nomor register
-
-                Alamat
+                - Nama pewaris
+                - Nama ahliwaris
+                - Tanggal
+                - Nomor register
+                - Alamat
 
     🔹 3. Admin dapat:
 
-               Melihat daftar user
-
-               Mengubah role user melalui halaman edit user
+               - Melihat daftar user
+               -Mengubah role user melalui halaman edit user
 
 🔹 4. Upload File
 
-               Mendukung upload dokumen (docx, pdf, dll)
+              - Mendukung upload dokumen (docx, pdf, dll)
 
 🔹 5. Navigasi
 
                Navbar dengan route:
-
-               Dashboard (Admin)
-
-               Data Ahli Waris (User)
-
-               Registrasi Surat (Admin)
-
-               Manajemen User (Admin)
+                 -Dashboard (Admin)
+                 -Data Ahli Waris (User)
+                 -Registrasi Surat (Admin)
+                 -Manajemen User (Admin)
 
 ## Akun Default untuk User dan Admin
 
@@ -86,13 +72,19 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 
 1. Klona repositori
    jalankan :
+
    git clone https://github.com/Tsabitah-dj/projectukk.git
+
    cd projectukk
+
    composer install
+
    cp .env.example  
+
    ren .env
 
 2. konfigurasi database
+
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
@@ -107,11 +99,13 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
    php artisan storage:link
 
 4. Jalankan situs web
+
    artisan migrate
    php artisan key:generate
    php artisan db:seed
 
 5. Jalankan situs web
+
    php artisan serve
 
 ## Dibuat oleh
