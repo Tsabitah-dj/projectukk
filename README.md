@@ -57,6 +57,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 ## ERD dan relasi antar table
 
 ![Relasi one to many](public/images/ERD.png)
+ Abaikan saja table yang lain, selain table users, dataahliwaris, dan ahliwaris
 
 ## UML
 
