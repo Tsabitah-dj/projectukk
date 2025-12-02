@@ -1,9 +1,9 @@
 # Project Ukk Pendataan ahli waris 
 
-## Konsep Web Yang Saya buat
-   Ini adalah web pendataan ahli waris dan registerasi ahli waris, dengan tampilan yang sederhana,dan warna yang soft, web ini digunakan untuk mengelola data, dan meregestrasi surat ahli waris secara digital.  
+## Konsep Web 
+   Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,dan warna yang soft, web ini digunakan untuk mengelola data. 
 
-## Fitur yang ada di Project ini
+## Fitur yang ada 
   🔹 1. Manajemen Data Ahli Waris (user)
 
      Tambah, edit, hapus, 
@@ -47,10 +47,8 @@
    🔹 4. Upload File
 
                Mendukung upload dokumen (docx, pdf, dll)
-
-               File tersimpan di storage/app/public/
-
-   🔹 5. Navigasi Mudah
+               
+   🔹 5. Navigasi 
 
                Navbar dengan route:
 
@@ -105,6 +103,11 @@
       php artisan storage:link
 
    6. Jalankan situs web 
+ artisan migrate
+      php artisan key:generate
+      php artisan db:seed
+
+   4. Jalankan situs web 
       php artisan serve
 
 ## Dibuat oleh
