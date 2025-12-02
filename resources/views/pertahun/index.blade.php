@@ -41,8 +41,8 @@
                     @forelse ($ahliwaris as $i => $item)
                         <tr>
                             <td>{{ $i + 1 }}</td>
-                            <td>{{ $item->nama_pemohon }}</td>
-                            <td>{{ $item->nama_alm }}</td>
+                            <td>{{ $item->dataahliwaris->nama_ahliwaris ?? '-' }}</td>
+                            <td>{{ $item->dataahliwaris->nama_pewaris ?? '-' }}</td>
                             <td>{{ $item->tanggal }}</td>
                             <td>{{ $item->no_register }}</td>
                             <td>{{ $item->alamat }}</td>

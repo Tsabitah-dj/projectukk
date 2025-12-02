@@ -11,7 +11,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </head>
     <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-<h1 class="text-center mt-5">Dashboard</h1>
+<h1 class="text-center mt-5">Welcome Admin </h1>
 
   @include('Layout.navbar')
     

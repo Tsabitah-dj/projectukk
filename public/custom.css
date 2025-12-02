@@ -1,10 +1,5 @@
-
 .navbar {
-    background: linear-gradient(90deg,
-        #AAC4F5,
-        #8CA9FF,
-        #93BFC7
-    );
+    background: linear-gradient(90deg, #aac4f5, #8ca9ff, #93bfc7);
 }
 
 .navbar-brand {
@@ -20,13 +15,8 @@
     filter: brightness(0) invert(1); /* ikon jadi putih */
 }
 
-
 .offcanvas {
-     background: linear-gradient(90deg,
-        #AAC4F5,
-        #8CA9FF,
-        #93BFC7
-    );
+    background: linear-gradient(90deg, #aac4f5, #8ca9ff, #93bfc7);
     color: #fff;
     transform: translateX(100%); /* Mulai dari kanan */
     transition: transform 0.4s ease, opacity 0.4s ease;
@@ -34,8 +24,8 @@
 }
 
 .offcanvas.show {
-    transform: translateX(0);  /* Slide masuk */
-    opacity: 1;                 /* Fade in */
+    transform: translateX(0); /* Slide masuk */
+    opacity: 1; /* Fade in */
 }
 
 .offcanvas-backdrop {
@@ -69,9 +59,8 @@
     color: #dbe9ff !important;
 }
 
-
 .dropdown-menu {
-    background: linear-gradient(90deg, #B4DEBD, #91C4C3);
+    background: linear-gradient(90deg, #b4debd, #91c4c3);
 }
 
 .dropdown-item {
@@ -83,9 +72,8 @@
     color: #fff;
 }
 
-
 .offcanvas-body .form-control {
-    background-color: #91C4C3;
+    background-color: #91c4c3;
     border: 1px solid #fff;
     color: #fff;
 }
@@ -105,26 +93,26 @@
 }
 
 .soft-card {
-        border: 0;
-        border-radius: 18px;
-        padding: 20px;
-        color: #333;
-        background: linear-gradient(90deg, #F5C857, #FFEE91);
-        transition: 0.3s;
+    border: 0;
+    border-radius: 18px;
+    padding: 20px;
+    color: #333;
+    background: linear-gradient(90deg, #f5c857, #ffee91);
+    transition: 0.3s;
 }
 .soft-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 .soft-icon {
-        width: 50px;
-        height: 50px;
-        background: #eaeefe;
-        border-radius: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #eaeefe;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .soft-icon img {
-        width: 32px;
+    width: 32px;
 }
