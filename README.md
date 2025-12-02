@@ -1,12 +1,12 @@
 # Project Ukk Pendataan ahli waris Tsabit-DJ
 
 ## Konsep Web Yang Saya buat
-   Ini adalah web pendataan ahli waris dan registerasi ahli waris, dengan tampilan yang sederhana,dan warna yang soft, web ini digunakan untuk mengelola data, dan meregestrasi surat ahli waris secara digital.  
+   Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,dan warna yang soft, web ini digunakan untuk pembuatan surat ahli waris.  
 
-## Fitur yang ada di Project ini
+## Fitur yang 
   🔹 1. Manajemen Data Ahli Waris (user)
 
-     Tambah, edit, hapus, dan lihat data ahli waris
+     Tambah, edit, hapus, 
 
       Data yang disimpan:
 
@@ -20,7 +20,7 @@
 
                 Alamat
 
-                Dokumen pendukung (upload file)
+                Dokumen  (upload file)
 
    🔹 2. Registrasi Surat Ahli Waris (admin)
 
@@ -50,7 +50,7 @@
 
                File tersimpan di storage/app/public/
 
-   🔹 5. Navigasi Mudah
+   🔹 5. Navigasi
 
                Navbar dengan route:
 
@@ -70,7 +70,7 @@
               - password : user1234
 
 ## ERD dan relasi antar table
-   ![Relasi Antar Table](public/images/ERD.png)
+   ![Relasi one to many](public/images/ERD.png)
    ![ERD](public/images/ERD2.png)
 
 ## UML 
