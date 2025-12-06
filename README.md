@@ -6,7 +6,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 
 ## Fitur yang ada
 
- 1. Manajemen Data Ahli Waris (user)
+ 🔹1. Manajemen Data Ahli Waris (user)
 
      Tambah, edit, hapus,
 
@@ -19,7 +19,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
                 - Alamat
                 - Dokumen  (upload file)
 
- 2. Registrasi Surat Ahli Waris (admin)
+ 🔹2. Registrasi Surat Ahli Waris (admin)
 
       Input data registrasi:
 
@@ -29,16 +29,16 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
                 - Nomor register
                 - Alamat
 
- 3. Admin dapat:
+ 🔹3. Admin dapat:
 
                - Melihat daftar user
                -Mengubah role user melalui halaman edit user
 
- 4. Upload File
+ 🔹4. Upload File
 
               - Mendukung upload dokumen (docx, pdf, dll)
 
- 5. Navigasi
+ 🔹5. Navigasi
 
                Navbar dengan route:
                  -Dashboard (Admin)
@@ -76,7 +76,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 
 ## cara instalasi
 
-🔹1. Klona repositori
+1. Klona repositori
    jalankan :
 
    git clone https://github.com/Tsabitah-dj/projectukk.git
@@ -89,7 +89,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 
    ren .env
 
-🔹2. konfigurasi database
+2. konfigurasi database
 
    DB_CONNECTION=mysql
    
@@ -103,7 +103,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
    
    DB_PASSWORD=
 
-🔹4. jalankan migrasi,db seed, dan key generate
+3. jalankan migrasi,db seed, dan key generate
    
    php artisan migrate
    
@@ -113,7 +113,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
    
    php artisan storage:link
 
-🔹6. Jalankan situs web
+4. Jalankan situs web
 
    artisan migrate
    
@@ -121,7 +121,7 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
    
    php artisan db:seed
 
-🔹8. Jalankan situs web
+5. Jalankan situs web
 
    php artisan serve
 
