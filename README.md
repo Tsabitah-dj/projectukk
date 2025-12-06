@@ -99,18 +99,19 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
    DB_PASSWORD=
 
 3. jalankan migrasi,db seed, dan key generate
+   
    php artisan migrate
    php artisan key:generate
    php artisan db:seed
    php artisan storage:link
 
-4. Jalankan situs web
+5. Jalankan situs web
 
    artisan migrate
    php artisan key:generate
    php artisan db:seed
 
-5. Jalankan situs web
+6. Jalankan situs web
 
    php artisan serve
 
