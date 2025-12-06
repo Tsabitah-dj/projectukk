@@ -92,26 +92,36 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 2. konfigurasi database
 
    DB_CONNECTION=mysql
+   
    DB_HOST=127.0.0.1
+   
    DB_PORT=3306
+   
    DB_DATABASE=ahliwaris_db
+   
    DB_USERNAME=root
+   
    DB_PASSWORD=
 
-3. jalankan migrasi,db seed, dan key generate
+4. jalankan migrasi,db seed, dan key generate
    
    php artisan migrate
+   
    php artisan key:generate
+   
    php artisan db:seed
+   
    php artisan storage:link
 
-5. Jalankan situs web
+6. Jalankan situs web
 
    artisan migrate
+   
    php artisan key:generate
+   
    php artisan db:seed
 
-6. Jalankan situs web
+8. Jalankan situs web
 
    php artisan serve
 
