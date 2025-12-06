@@ -76,56 +76,43 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
 -Database (MySQL)
 -Web Browser (Chrome,Edge,dll)
 
-## cara instalasi
+## 📌 Cara Instalasi
 
-1. Klona repositori
-   jalankan :
+### 1️⃣ Klona Repositori  
+Jalankan perintah berikut:
 
-   - git clone https://github.com/Tsabitah-dj/projectukk.git
+```bash
+git clone https://github.com/Tsabitah-dj/projectukk.git
+cd projectukk
+composer install
+cp .env.example .env
+```
 
-   - cd projectukk
+### 2️⃣ Konfigurasi Database
+Sesuaikan File .env
 
-   - composer install
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=ahliwaris_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+### 3️⃣ Jalankan Migrasi,db seed,dan Storage link
 
-   - cp .env.example  
+```bash
+php artisan migrate
+php artisan key:generate
+php artisan db:seed
+php artisan storage:link
+```
 
-   - ren .env
+### 4️⃣ Jalankan Situs Web
 
-2. konfigurasi database
-
-   DB_CONNECTION=mysql
-   
-   DB_HOST=127.0.0.1
-   
-   DB_PORT=3306
-   
-   DB_DATABASE=ahliwaris_db
-   
-   DB_USERNAME=root
-   
-   DB_PASSWORD=
-
-3. jalankan migrasi,db seed, dan key generate
-   
-   php artisan migrate
-   
-   php artisan key:generate
-   
-   php artisan db:seed
-   
-   php artisan storage:link
-
-4. Jalankan situs web
-
-   artisan migrate
-   
-   php artisan key:generate
-   
-   php artisan db:seed
-
-5. Jalankan situs web
-
-   php artisan serve
+```bash
+php artisan serve
+```
 
 ## Dibuat oleh
 
