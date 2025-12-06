@@ -60,7 +60,9 @@ Ini adalah web yang di buat menggunakan laravel 12, dengan tampilan offcanvas,da
  Abaikan saja table yang lain, selain table users, dataahliwaris, dan ahliwaris
  
  Table :
+ 
          -Users --> dataahliwaris (One to Many)
+         
          -dataahliwaris --> ahliwaris (One to Many)
  
 
